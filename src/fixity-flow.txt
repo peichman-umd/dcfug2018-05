@@ -1,0 +1,23 @@
+@startuml
+
+(*) -->[«queue»\nfedorafixity] "fcrepo-fixity"
+"fcrepo-fixity" -left->[«queue»\nfixitysuccess] "umd-fcrepo-broadcast:\nfixitysuccess"
+"umd-fcrepo-broadcast:\nfixitysuccess" --> ===LOG===
+"umd-fcrepo-broadcast:\nfixitysuccess" --> ===AUDIT===
+
+"fcrepo-fixity" -right->[«queue»\nfixityfailure] "umd-fcrepo-broadcast:\nfixityfailure"
+"umd-fcrepo-broadcast:\nfixityfailure" --> ===LOG===
+"umd-fcrepo-broadcast:\nfixityfailure" --> ===AUDIT===
+"umd-fcrepo-broadcast:\nfixityfailure" --> ===NOTIFY===
+
+===LOG=== -->[«queue»\nfixitylog] "umd-fcrepo-sparql-query:\nfixity"
+--> "fixity.log"
+
+===AUDIT=== -->[«queue»\nfixityaudit] "umd-fcrepo-sparql-query:\nfixityaudit"
+-->[«queue»\ntriplestore.audit.data] "umd-fcrepo-triplestore:\naudit"
+--> "fcrepo-audit"
+
+===NOTIFY=== -->[«queue»\nfixitynotify] "umd-fcrepo-notification"
+--> "...@umd.edu"
+
+@enduml
