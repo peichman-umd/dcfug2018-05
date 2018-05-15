@@ -32,6 +32,7 @@ output: index.html
 ### Our Extra Routes
 
 - SPARQL query transformation route: [umd-fcrepo-sparql-query](https://github.com/umd-lib/umd-fcrepo-camel-extensions/tree/develop/umd-fcrepo-sparql-query)
+- Triplestore route: [umd-fcrepo-triplestore](https://github.com/umd-lib/umd-fcrepo-camel-extensions/tree/develop/umd-fcrepo-triplestore)
 - Notification route: [umd-fcrepo-notification](https://github.com/umd-lib/umd-fcrepo-camel-extensions/tree/develop/umd-fcrepo-notification)
 - Extension repo: <https://github.com/umd-lib/umd-fcrepo-camel-extensions>
 
