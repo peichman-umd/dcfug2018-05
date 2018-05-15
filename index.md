@@ -1,4 +1,4 @@
-title: Fixity
+title: Flexible Fixity Checking in Fedora
 author:
   name: Peter Eichman
   email: peichman@umd.edu
