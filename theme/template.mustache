@@ -1,0 +1,28 @@
+{{#progress}}
+  <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+{{/progress}}
+
+
+{{#slides}}
+  <div class="slide{{#hidden}} hidden{{/hidden}}{{#classList}} {{classList}}{{/classList}}" id="slide-{{id}}">
+    <section class="slide-content">{{{content}}}</section>
+  </div>
+{{/slides}}
+
+{{#controls}}
+  <div class="controls">
+    <div class="arrow prev"></div>
+    <div class="arrow next"></div>
+  </div>
+{{/controls}}
+
+<div class="logo">
+  <img src="https://www.lib.umd.edu/images/wrapper/liblogo.png" alt="UMD Libraries"/>
+</div>
+
+<div class="info">
+  <div class="location">DC Fedora Users Group</div>
+  <div class="date">May 15, 2018</div>
+</div>

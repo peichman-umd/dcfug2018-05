@@ -1,0 +1,38 @@
+h1 {
+    font-size: 1.75em;
+}
+h3 {
+    font-size: 1.25em;
+}
+a, a:hover, h1, h3 {
+    color: #c00;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    max-height: 400px;
+}
+ul {
+    padding: 10px 0 10px 60px;
+}
+.info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+}
+.date {
+    font-weight: 200;
+}
+.logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em;
+}
+
+.photo-credit {
+    font-style: italic;
+    font-size: .5em !important;
+}
